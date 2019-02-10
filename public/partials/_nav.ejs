@@ -1,7 +1,11 @@
 <div id="navigation">
   <ul id="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="apps.html">Apps</a></li>
-    <li><a href="directions.html">Directions</a></li>
+    <li id="home"><a href="index.html">Home</a></li>
+    <li id="apps"><a href="apps.html">Apps</a></li>
+    <li id="directions"><a href="directions.html">Directions</a></li>
   </ul>
 </div>
+
+<script>
+  document.querySelector("#<%= id %>").classList.add("active")
+</script>
