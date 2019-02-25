@@ -1,24 +1,40 @@
 <%- include('./partials/_nav.ejs', {id : "apps"}); %>
 <main>
-  <article>
-    <h1>App Bundles</h1>
-    <h3>Freebie</h3>
-    <p>
-      <img src="images/ondesoft.jpg" alt="One Soft" class="medium-right-img"> Stacksocial just published its so called
-      Free Ondesoft Mac Tool Bundle, which contains 5 apps from Onesoft. The bundle is worth $146 will be probably
-      available only a couple of days so you’d better hurry up to get it. </p>
-    <hr>
-    <h3>Macware Business Bundle</h3>
-    <p>
-      Here comes the next bundle for march. This time its macware who publish a bundle. The so called macware Business
-      Bundle contains 6 apps at a price of only €29.99 instead of €199.94. So you can save around 84%. </p>
-    <hr>
-    <h3>Ultimate Bundle</h3>
-    <p>
-      <img src="images/ultimate.jpeg" alt="One Soft" class="medium-left-img"> This bundle is worth more than €400. So
-      for just a little bit more than $10, you can make your bargain if you want just one of these apps. of dollars. We
-      think, that the bundle will be online until the mid of October </p>
-    <hr>
+  <article class="ui basic segment">
+
+    <div class="ui two cards">
+      <div class="ui card">
+        <div class="image">
+          <img src="images/ondesoft.jpg">
+        </div>
+        <div class="content">
+          <a class="header">Frebie</a>
+          <div class="meta">
+            <span class="date">Special Offer</span>
+          </div>
+          <div class="description">
+            Here comes the next bundle for march. This time it's macware who publish a bundle. The so called macware
+            Business Bundle contains 6 apps at a price of only €29.99 instead of €199.94. So you can save around 84%.
+          </div>
+        </div>
+      </div>
+
+      <div class="ui card">
+        <div class="image">
+          <img src="images/ultimate.jpeg">
+        </div>
+        <div class="content">
+          <a class="header">Ultimate Bundle</a>
+          <div class="meta">
+            <span class="date">Special Offer</span>
+          </div>
+          <div class="description">
+            With the new €5 Insanity Deals from Bundlehunt you receive every day a highly reduced app for €5 only with
+            savings up to 75%. Not a real bundle but, as there are multiple apps for only €5 each, one new per day, for
+            the days to come.
+          </div>
+        </div>
+      </div>
+    </div>
   </article>
-  <%- include('./partials/_secondary.ejs'); %>
 </main>
