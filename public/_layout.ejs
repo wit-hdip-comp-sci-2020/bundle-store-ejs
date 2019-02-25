@@ -7,10 +7,17 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
   </head>
   <body>
-    <img src="images/banner.png" class="large-centre-img">
+    <img src="images/banner.png" class="ui centered massive image">
     <section class="ui container">
       <%- include('./partials/_header.ejs'); %>
-      <%- yield %>
+      <div class="ui grid">
+        <div class="ui twelve wide column">
+          <%- yield %>
+        </div>
+        <div class="ui four wide column">
+          <%- include('./partials/_secondary.ejs'); %>
+        </div>
+      </div>
       <%- include('./partials/_footer.ejs'); %>
     </section>
   </body>
